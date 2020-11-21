@@ -16,6 +16,11 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Glozzom Theme</title>
   </head>
@@ -220,6 +225,115 @@
     </section>
     <!-- Video Play Section -->
 
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center">Check Out Our Photos</p>
+
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/560x560"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+            >
+              <img
+                src="https://source.unsplash.com/random/560x560"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/561x561"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="561"
+              data-width="561"
+            >
+              <img
+                src="https://source.unsplash.com/random/561x561"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/562x562"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="562"
+              data-width="562"
+            >
+              <img
+                src="https://source.unsplash.com/random/562x562"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/563x563"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="563"
+              data-width="563"
+            >
+              <img
+                src="https://source.unsplash.com/random/563x563"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/564x564"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="564"
+              data-width="564"
+            >
+              <img
+                src="https://source.unsplash.com/random/564x564"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/565x565"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="565"
+              data-width="565"
+            >
+              <img
+                src="https://source.unsplash.com/random/565x565"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Photo Gallery Section -->
+
     <!-- Video Modal -->
     <div class="modal fade" id="videoModal">
       <div class="modal-dialog">
@@ -258,6 +372,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
@@ -266,6 +382,12 @@
       $(".carousel").carousel({
         interval: 6000,
         pause: "hover",
+      });
+
+      // Lightbox Init
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
       });
 
       // Video Play
