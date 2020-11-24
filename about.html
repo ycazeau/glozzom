@@ -193,6 +193,70 @@
     </section>
     <!--  Icon Boxes Section -->
 
+    <!--  Testimonials Section -->
+    <section id="testimonials" class="p-4 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row text-center">
+          <div class="col">
+            <div class="slider">
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur, voluptatem.
+                  </p>
+                  <footer class="blockquote-footer">
+                    JEAN CHARLES Schadrac From
+                    <cite title="Company 1"> PROWEBSA </cite>
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur, voluptatem.
+                  </p>
+                  <footer class="blockquote-footer">
+                    Sadock THEODORE From
+                    <cite title="Company 1"> PROWEBSA </cite>
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur, voluptatem.
+                  </p>
+                  <footer class="blockquote-footer">
+                    CLaudio TEROGENE From
+                    <cite title="Company 1"> PROWEBSA </cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Testimonials Section -->
+
+    <!-- Footer Section -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Glozzom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+
     <!-- SCRIPT -->
     <script
       src="http://code.jquery.com/jquery-3.5.1.min.js"
@@ -214,6 +278,12 @@
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+      });
     </script>
     <!-- SCRIPT -->
   </body>
