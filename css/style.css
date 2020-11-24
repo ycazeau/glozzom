@@ -1,48 +1,48 @@
-body{
+body {
   overflow-x: hidden;
 }
 
-.navbar .nav-link{
+.navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
 
-.nav .nav-item.active{
+.nav .nav-item.active {
   border-left: #444 3px solid;
 }
 
-.carousel-item{
+.carousel-item {
   height: 400px;
 }
 
-.carousel-image-1{
-  background: url('../img/image1.jpg');
+.carousel-image-1 {
+  background: url("../img/image1.jpg");
   background-size: cover;
 }
 
-.carousel-image-2{
-  background: url('../img/image2.jpg');
+.carousel-image-2 {
+  background: url("../img/image2.jpg");
   background-size: cover;
 }
 
-.carousel-image-3{
-  background: url('../img/image3.jpg');
+.carousel-image-3 {
+  background: url("../img/image3.jpg");
   background-size: cover;
 }
 
-#home-heading{
+#home-heading {
   position: relative;
   min-height: 200px;
-  background: url('../img/lights.jpg');
+  background: url("../img/lights.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
 }
 
-.dark-overlay{
+.dark-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,10 +51,10 @@ body{
   background: rgba(0, 0, 0, 0.7);
 }
 
-#video-play{
+#video-play {
   position: relative;
   min-height: 200px;
-  background: url('../img/media.jpg');
+  background: url("../img/media.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;
@@ -62,13 +62,13 @@ body{
   color: #fff;
 }
 
-#video-play a{
+#video-play a {
   color: #fff;
 }
 
-#page-header{
+#page-header {
   height: 200px;
-  background: url('../img/image1.jpg');
+  background: url("../img/image1.jpg");
   background-position: 0 -360px;
   background-attachment: fixed;
   color: #fff;
@@ -76,7 +76,7 @@ body{
   padding-top: 50px;
 }
 
-.about-img{
+.about-img {
   margin-top: -50px;
 }
 
@@ -97,4 +97,35 @@ body{
 #main-footer {
   background: #000;
   color: #fff;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 12px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }

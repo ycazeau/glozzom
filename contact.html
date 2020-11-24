@@ -172,33 +172,53 @@
     <!--  Team Section -->
     <section id="team" class="py-5 text-center bg-dark text-white">
       <div class="container">
-        <h1> Our Team</h1>
-        <hr>
+        <h1>Our Team</h1>
+        <hr />
         <div class="row">
           <div class="col-md-3">
-            <img src="./img/person1.jpg" alt="" class="img-fluid rounded-circle mb-2">
-            <h4> Jeanne DOE</h4>
+            <img
+              src="./img/person1.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Jeanne DOE</h4>
             <small> Marketing Manager</small>
           </div>
           <div class="col-md-3">
-            <img src="./img/person2.jpg" alt="" class="img-fluid rounded-circle mb-2">
-            <h4> Jane DOE</h4>
+            <img
+              src="./img/person2.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Jane DOE</h4>
             <small> Business Manager</small>
           </div>
           <div class="col-md-3">
-            <img src="./img/person3.jpg" alt="" class="img-fluid rounded-circle mb-2">
-            <h4> John DOE</h4>
+            <img
+              src="./img/person3.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>John DOE</h4>
             <small> CEO </small>
           </div>
           <div class="col-md-3">
-            <img src="./img/person4.jpg" alt="" class="img-fluid rounded-circle mb-2">
-            <h4> Johnny DOE</h4>
+            <img
+              src="./img/person4.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-2"
+            />
+            <h4>Johnny DOE</h4>
             <small> IT Manager</small>
           </div>
         </div>
       </div>
     </section>
     <!--  Team Section -->
+
+    <!-- Back To Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Back To Top -->
 
     <!-- Footer Section -->
     <footer id="main-footer" class="text-center p-2">
@@ -232,6 +252,31 @@
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
     <!-- SCRIPT -->
   </body>
